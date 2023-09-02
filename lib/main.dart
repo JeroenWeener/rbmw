@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rbmw/theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,29 +9,41 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: RbmwTheme.colorScheme,
         useMaterial3: true,
+        textTheme: TextTheme(
+          displayLarge: GoogleFonts.merriweather(
+              fontSize: 92, fontWeight: FontWeight.w300, letterSpacing: -1.5),
+          displayMedium: GoogleFonts.merriweather(
+              fontSize: 57, fontWeight: FontWeight.w300, letterSpacing: -0.5),
+          displaySmall: GoogleFonts.merriweather(
+              fontSize: 46, fontWeight: FontWeight.w400),
+          headlineMedium: GoogleFonts.merriweather(
+              fontSize: 32, fontWeight: FontWeight.w400, letterSpacing: 0.25),
+          headlineSmall: GoogleFonts.merriweather(
+              fontSize: 23, fontWeight: FontWeight.w400),
+          titleLarge: GoogleFonts.merriweather(
+              fontSize: 19, fontWeight: FontWeight.w500, letterSpacing: 0.15),
+          titleMedium: GoogleFonts.merriweather(
+              fontSize: 15, fontWeight: FontWeight.w400, letterSpacing: 0.15),
+          titleSmall: GoogleFonts.merriweather(
+              fontSize: 13, fontWeight: FontWeight.w500, letterSpacing: 0.1),
+          bodyLarge: GoogleFonts.libreFranklin(
+              fontSize: 16, fontWeight: FontWeight.w400, letterSpacing: 0.5),
+          bodyMedium: GoogleFonts.libreFranklin(
+              fontSize: 14, fontWeight: FontWeight.w400, letterSpacing: 0.25),
+          labelLarge: GoogleFonts.libreFranklin(
+              fontSize: 14, fontWeight: FontWeight.w500, letterSpacing: 1.25),
+          bodySmall: GoogleFonts.libreFranklin(
+              fontSize: 12, fontWeight: FontWeight.w400, letterSpacing: 0.4),
+          labelSmall: GoogleFonts.libreFranklin(
+              fontSize: 10, fontWeight: FontWeight.w400, letterSpacing: 1.5),
+        ),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
