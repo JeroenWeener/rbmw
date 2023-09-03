@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Redactie Bureau Marita Weener',
-      theme: RbmwTheme.themeData(),
+      title: 'Redactiebureau Marita Weener',
+      theme: RbmwTheme.themeData,
       home: const HomePage(),
     );
   }

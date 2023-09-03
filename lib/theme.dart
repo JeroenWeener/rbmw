@@ -36,7 +36,7 @@ class RbmwTheme {
     scrim: Color(0xFF000000),
   );
 
-  static ThemeData themeData() {
+  static ThemeData get themeData {
     return ThemeData(
       colorScheme: RbmwTheme.colorScheme,
       useMaterial3: true,
@@ -70,6 +70,10 @@ class RbmwTheme {
       ),
       iconTheme: IconThemeData(
         color: RbmwTheme.colorScheme.primary,
+      ),
+      dividerTheme: DividerThemeData(
+        color: RbmwTheme.colorScheme.onPrimaryContainer,
+        thickness: 1.5,
       ),
     );
   }
