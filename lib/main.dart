@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rbmw/home_page/home_page.dart';
+import 'package:rbmw/home_page.dart';
 import 'package:rbmw/theme.dart';
 
 void main() {
