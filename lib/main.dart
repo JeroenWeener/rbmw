@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rbmw/home_page/home_page.dart';
+import 'package:rbmw/home_page.dart';
 import 'package:rbmw/theme.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Redactie Bureau Marita Weener',
       theme: RbmwTheme.themeData(),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(),
     );
   }
 }

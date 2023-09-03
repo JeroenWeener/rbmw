@@ -45,12 +45,12 @@ class RbmwTheme {
             fontSize: 92, fontWeight: FontWeight.w300, letterSpacing: -1.5),
         displayMedium: GoogleFonts.merriweather(
             fontSize: 57, fontWeight: FontWeight.w300, letterSpacing: -0.5),
-        displaySmall: GoogleFonts.merriweather(
-            fontSize: 46, fontWeight: FontWeight.w400),
+        displaySmall:
+            GoogleFonts.merriweather(fontSize: 46, fontWeight: FontWeight.w400),
         headlineMedium: GoogleFonts.merriweather(
             fontSize: 32, fontWeight: FontWeight.w400, letterSpacing: 0.25),
-        headlineSmall: GoogleFonts.merriweather(
-            fontSize: 23, fontWeight: FontWeight.w400),
+        headlineSmall:
+            GoogleFonts.merriweather(fontSize: 23, fontWeight: FontWeight.w400),
         titleLarge: GoogleFonts.merriweather(
             fontSize: 19, fontWeight: FontWeight.w500, letterSpacing: 0.15),
         titleMedium: GoogleFonts.merriweather(
