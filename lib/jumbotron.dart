@@ -31,20 +31,21 @@ class _JumbotronHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return Padding(
       padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            style: Theme.of(context).textTheme.displaySmall,
+            style: textTheme.displaySmall,
             'Redactiebureau\nMarita Weener',
           ),
           const SizedBox(height: 20),
           const SizedBox(width: 44, child: Divider()),
           Text(
             'Voor de puntjes op je i',
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: textTheme.bodyLarge,
           ),
         ],
       ),
