@@ -36,7 +36,7 @@ class RbmwTheme {
     scrim: Color(0xFF000000),
   );
 
-  static ThemeData themeData() {
+  static ThemeData get themeData {
     return ThemeData(
       colorScheme: RbmwTheme.colorScheme,
       useMaterial3: true,
