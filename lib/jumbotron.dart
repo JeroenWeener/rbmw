@@ -13,7 +13,6 @@ class Jumbotron extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Placeholder(),
             Column(
               children: [
                 Text(
@@ -22,7 +21,8 @@ class Jumbotron extends StatelessWidget {
                 ),
                 const Text('Voor de puntjes op je i'),
               ],
-            )
+            ),
+            Image.asset('assets/90a441_5ae6a7c87f1c46319449274202991626~mv2.png'),
           ],
         ),
       ),
