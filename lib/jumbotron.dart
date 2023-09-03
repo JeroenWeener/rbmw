@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rbmw/theme.dart';
 
 class Jumbotron extends StatelessWidget {
-  const Jumbotron({
-    super.key,
-  });
+  const Jumbotron({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,7 @@ class Jumbotron extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  style: RbmwTheme.themeData().textTheme.headlineLarge,
+                  style: Theme.of(context).textTheme.headlineLarge,
                   'Redactiebureau Marita Weener',
                 ),
                 const Text('Voor de puntjes op je i'),
