@@ -71,6 +71,10 @@ class RbmwTheme {
       iconTheme: IconThemeData(
         color: RbmwTheme.colorScheme.primary,
       ),
+      dividerTheme: DividerThemeData(
+        color: RbmwTheme.colorScheme.onPrimaryContainer,
+        thickness: 1.5,
+      ),
     );
   }
 }
