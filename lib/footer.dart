@@ -24,11 +24,11 @@ class Footer extends StatelessWidget {
   }
 }
 
-class ContactDetail extends StatelessWidget {
-  const ContactDetail({
-    super.key,
+class _ContactDetail extends StatelessWidget {
+  const _ContactDetail({
     required this.icon,
     required this.text,
+    super.key,
   });
 
   final IconData icon;
