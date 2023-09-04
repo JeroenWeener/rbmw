@@ -7,7 +7,6 @@ class Footer extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextStyle? footerTextStyle =
         Theme.of(context).textTheme.bodyMedium?.apply(color: Colors.white);
-
     return ColoredBox(
       color: Theme.of(context).colorScheme.secondary,
       child: const Padding(
