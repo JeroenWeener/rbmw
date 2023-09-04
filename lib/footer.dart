@@ -45,7 +45,7 @@ class ContactDetail extends StatelessWidget {
         children: [
           Icon(icon, color: onSecondary),
           const SizedBox(width: 16),
-          Text(style: textStyle, text),
+          Text(text, style: textStyle),
         ],
       ),
     );
