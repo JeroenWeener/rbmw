@@ -36,9 +36,9 @@ class ContactDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final onSecondary = Theme.of(context).colorScheme.onSecondary;
     final TextStyle? textStyle =
-        Theme.of(context).textTheme.bodyMedium?.apply(color: Colors.white);
-
+        Theme.of(context).textTheme.bodyMedium?.apply(color: onSecondary);
     return Padding(
       padding: const EdgeInsets.all(4.0),
       child: Row(
