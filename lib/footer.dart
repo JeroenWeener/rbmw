@@ -43,7 +43,7 @@ class ContactDetail extends StatelessWidget {
       padding: const EdgeInsets.all(4.0),
       child: Row(
         children: [
-          Icon(color: Colors.white, icon),
+          Icon(icon, color: onSecondary),
           const SizedBox(width: 16),
           Text(style: textStyle, text),
         ],
