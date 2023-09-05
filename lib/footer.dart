@@ -9,7 +9,7 @@ class Footer extends StatelessWidget {
     final TextStyle? footerTextStyle =
         Theme.of(context).textTheme.bodyMedium?.apply(color: colorScheme.onSecondary);
     return ColoredBox(
-      color: Theme.of(context).colorScheme.secondary,
+      color: colorScheme.secondary,
       child: const Padding(
         padding: EdgeInsets.all(40.0),
         child: Column(
