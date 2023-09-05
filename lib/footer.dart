@@ -5,8 +5,9 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
     final TextStyle? footerTextStyle =
-        Theme.of(context).textTheme.bodyMedium?.apply(color: Colors.white);
+        Theme.of(context).textTheme.bodyMedium?.apply(color: colorScheme.onSecondary);
     return ColoredBox(
       color: Theme.of(context).colorScheme.secondary,
       child: const Padding(
