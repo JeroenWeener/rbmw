@@ -6,18 +6,17 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    return ColoredBox(
+    return Container(
+      height: MediaQuery.of(context).size.height / 4,
       color: colorScheme.secondary,
-      child: const Padding(
-        padding: EdgeInsets.all(40.0),
-        child: Column(
-          children: [
-            _ContactDetail(icon: Icons.phone, text: '06 235 873 74'),
-            _ContactDetail(icon: Icons.phone, text: '0592 769 056'),
-            _ContactDetail(
-                icon: Icons.mail, text: 'info@redactiebureaumaritaweener.nl'),
-          ],
-        ),
+      padding: const EdgeInsets.all(40.0),
+      child: const Column(
+        children: [
+          _ContactDetail(icon: Icons.phone, text: '06 235 873 74'),
+          _ContactDetail(icon: Icons.phone, text: '0592 769 056'),
+          _ContactDetail(
+              icon: Icons.mail, text: 'info@redactiebureaumaritaweener.nl'),
+        ],
       ),
     );
   }
