@@ -6,20 +6,22 @@ class Jumbotron extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ColoredBox(
-      color: RbmwTheme.colorScheme.primaryContainer,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 32),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const _JumbotronHeader(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 1.5,
-              child: Image.asset(
-                  'assets/90a441_5ae6a7c87f1c46319449274202991626~mv2.png'),
-            ),
-          ],
+    return Expanded(
+      child: ColoredBox(
+        color: RbmwTheme.colorScheme.primaryContainer,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 32),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const _JumbotronHeader(),
+              SizedBox(
+                height: MediaQuery.of(context).size.height / 2,
+                child: Image.asset(
+                    'assets/90a441_5ae6a7c87f1c46319449274202991626~mv2.png'),
+              ),
+            ],
+          ),
         ),
       ),
     );
