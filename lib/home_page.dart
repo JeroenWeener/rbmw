@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rbmw/footer.dart';
 import 'package:rbmw/jumbotron.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Jumbotron(),
+          Footer(),
         ],
       ),
     );
