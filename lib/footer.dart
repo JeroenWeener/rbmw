@@ -6,17 +6,15 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final TextStyle? footerTextStyle =
-        Theme.of(context).textTheme.bodyMedium?.apply(color: colorScheme.onSecondary);
     return ColoredBox(
       color: colorScheme.secondary,
       child: const Padding(
         padding: EdgeInsets.all(40.0),
         child: Column(
           children: [
-            ContactDetail(icon: Icons.phone, text: '06 235 873 74'),
-            ContactDetail(icon: Icons.phone, text: '0592 769 056'),
-            ContactDetail(
+            _ContactDetail(icon: Icons.phone, text: '06 235 873 74'),
+            _ContactDetail(icon: Icons.phone, text: '0592 769 056'),
+            _ContactDetail(
                 icon: Icons.mail, text: 'info@redactiebureaumaritaweener.nl'),
           ],
         ),
@@ -29,7 +27,6 @@ class _ContactDetail extends StatelessWidget {
   const _ContactDetail({
     required this.icon,
     required this.text,
-    super.key,
   });
 
   final IconData icon;
