@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+        backgroundColor: Theme.of(context).colorScheme.surfaceVariant,
       ),
       body: const Column(
         children: [
@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: const Footer(),
+      backgroundColor: Theme.of(context).colorScheme.surfaceVariant,
     );
   }
 }
