@@ -15,7 +15,7 @@ class Jumbotron extends StatelessWidget {
           children: [
             const _JumbotronHeader(),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 1.5,
+              height: MediaQuery.of(context).size.height / 2,
               child: Image.asset(
                   'assets/90a441_5ae6a7c87f1c46319449274202991626~mv2.png'),
             ),
@@ -32,6 +32,7 @@ class _JumbotronHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+
     return Padding(
       padding: const EdgeInsets.all(24),
       child: Column(
